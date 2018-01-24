@@ -1,0 +1,10 @@
+build/*
+.idea/*
+
+
+node_modules/
+bower_components
+*.log
+*.sublime-*
+*.rar
+*.zip

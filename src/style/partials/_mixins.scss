@@ -1,0 +1,24 @@
+@mixin accent_text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+@mixin call_btn {
+	display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 1.2em;
+    color: #eddaaa;
+    border: 3px solid #eddaaa;
+    padding: 5px 8px;
+    text-decoration: none;
+    text-align: center;
+    &:hover,
+    &:active,
+    &:focus {
+        color: #fff;
+        background: #eddaaa;
+        text-decoration: none;
+    }
+}

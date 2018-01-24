@@ -1,0 +1,29 @@
+.header__logo:after {
+	display: block;
+	content: "dwdw";
+}
+.header__callback {
+  text-align: right;
+}
+
+.call-back-btn {
+	@include call_btn;
+}
+
+.header__phone {
+	@include accent_text;
+	font-size: 1.357em;
+	color: $text;
+	text-decoration: none;
+}
+
+.navigation {
+    margin-top: 15px;
+}
+
+.header__mail {
+    text-decoration: none;
+    color: $text;
+	@include accent_text;
+    font-size: 1.214em;
+}

@@ -1,0 +1,41 @@
+.nav__item:first-child {
+	display: none;
+}
+
+nav {
+  background-color:#65A8A6;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav__link {
+	padding: 5px 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $text;
+}
+
+@media (max-width: $tablet) {
+	.nav__list {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.nav__item {
+		width: 100%;
+	}
+
+	.nav__link {
+		display: flex;
+		padding: 15px 0
+	}
+.nav__item:first-child {
+	display: flex;
+}
+	
+}

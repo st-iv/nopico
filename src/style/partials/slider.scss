@@ -1,0 +1,39 @@
+.slide {
+	text-align: center;
+}
+.slick-next {
+	right: 100px;
+}
+.slick-prev {
+	left: 100px;
+}
+
+.slider__img {
+	margin: auto;
+}
+
+.slider__wrapper {
+	background: #000;
+}
+
+.prev, .next {
+	background: url('img/prev.svg');
+	cursor: pointer;
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	opacity: 0.7;
+	transition: all 0.2s;
+	&:hover {
+		
+		transform: scale(1.2);
+	}
+}
+.prev {
+    left: -4%;
+    top: 50%;
+}
+.next {
+    right: -4%;
+    top: 50%;
+}

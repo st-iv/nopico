@@ -1,0 +1,35 @@
+.offer {
+    background: url("../img/spetspredlohfdsg.png") center no-repeat;
+    background-size: cover;
+    min-height: 284px;
+}
+
+.offer__input {
+	text-align: center;
+	padding: 10px 15px;
+}
+
+.offer__desc {
+    color: #fff;
+    font-size: 2.071em;
+    text-align: center;
+}
+
+.offer__btn {
+    font-size: 2.143em;
+    margin-top: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 40px;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 20px 40px;
+    color: #CC1F2B;
+    @include accent_text;
+    transition: all .2s;
+    &:hover,
+    &:focus,
+    &:active {
+        background: #ffd530;
+    }
+}

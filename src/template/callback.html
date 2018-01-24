@@ -3,36 +3,44 @@
 		Для более точного расчета оставьте ваши контакты и мы свяжемся с вами в течении <strong>5 минут</strong>
 	</p>
 	<div class="row">
-		<div class="col-md-4 text-center">
-			<input type="text" placeholder="Введите имя">
+		<div class="callback__item col-md-4 text-left">
+			<label class="callback__label" for="name">Имя:</label>
+			<input class="callback__input" id="name" type="text" placeholder="Введите имя">
 		</div>
-		<div class="col-md-4 text-center">
-			<input type="text" placeholder="Введите номер телефона">
+		<div class="callback__item col-md-4 text-left">
+			<label class="callback__label" for="phone">Сотовый телефон:
+			</label>
+			<input class="callback__input" id="phone" type="text" placeholder="Введите номер телефона">
 		</div>
-		<div class="col-md-4 text-center">
-			<input type="email" placeholder="Введите ваш email" required >
+		<div class="callback__item col-md-4 text-left">
+			<label class="callback__label" for="email">Электронная почта:
+			</label>
+			<input class="callback__input" id="email" type="email" placeholder="Введите ваш email" required >
 		</div>
 	</div>
-	<div class="row">
-		<form action="">
-			<div class="col-xs-12">
-				<p>
-					Как с вами удобнее связаться?
-				</p>
+	<div class="col-sm-12 text-center">
+		<p class="check__title">
+			Как с вами удобнее связаться?
+		</p>
+	</div>
+	<form action="">
+		<div class="row">
+			
+			<div class="col-sm-12 text-center">
+				<div class="callback__check">
+					<input type="checkbox" id="msgEmail" name="msgEmail" value="msgEmail">
+					<label for="msgEmail">Письмо на E-mail</label>
+					<br>
+					<input type="checkbox" id="callPhone" name="callPhone" value="callPhone">
+					<label for="msgEmail">
+						Позвонить по телефону
+					</label>
+				</div>
 			</div>
 			<div class="col-sm-12 text-center">
-				<input type="checkbox" id="msgEmail" name="msgEmail" value="msgEmail">
-				<label for="msgEmail">Письмо на E-mail</label>
-			</div>
-			<div class="col-sm-12 text-center">
-				<input type="checkbox" id="callPhone" name="callPhone" value="callPhone">
-				<label for="msgEmail">
-					Позвонить по телефону
-				</label>
-			</div>
-			<div class="col-sm-12">
 				<button class="callback__submit" type="submit">отправить</button>
 			</div>
-		</form>
-	</div>
+		</div>
+	</form>
+	
 </div>

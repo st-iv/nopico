@@ -1,0 +1,15 @@
+.callback__desc {
+	max-width: 670px;
+	margin: 0 auto 15px;
+}
+
+.callback__submit {
+	padding: 10px 60px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	box-shadow: none;
+	background: $mango;
+	color: #fff;
+	@include accent_text;
+	border: none;
+}

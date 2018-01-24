@@ -8,6 +8,12 @@ h1 {
 	font-size: 2.571em;
 }
 
+.block__title {
+	@include accent_text;
+	font-size: 2.857rem;
+	padding-top: 30px;
+}
+
 .block-center {
     display: flex;
     align-items: center;

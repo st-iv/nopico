@@ -3,8 +3,10 @@
     font-weight: 700;
 }
 
+// @mixin reset_input {
+// }
 @mixin call_btn {
-	display: inline-block;
+    display: inline-block;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -20,5 +22,39 @@
         color: #fff;
         background: #eddaaa;
         text-decoration: none;
+    }
+}
+
+@mixin send_btn {
+    cursor: pointer;
+    padding: 10px 60px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: none;
+    background: $mango;
+    border: 3px solid $mango;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    transition: all .2s;
+    &:hover,
+    &:focus,
+    &:active {
+        background: #fff;
+        color: $mango;
+        border: 3px solid $mango;
+    }
+}
+
+@mixin inner_input {
+    color: #000;
+    border-style: solid;
+    border: 1px solid #000;
+    background: #f2f2f2;
+    text-align: center;
+    &:hover,
+    &:focus,
+    &:active {
+        background: #fff;
     }
 }

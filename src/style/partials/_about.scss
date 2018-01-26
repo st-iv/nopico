@@ -1,6 +1,7 @@
 .about {
-	background: #f2f2f2;
+    background: #f2f2f2;
 }
+
 .about__item {
     margin: 0 0 30px;
 }
@@ -16,5 +17,11 @@
 }
 
 .about__price {
-	font-weight: 600;
+    font-weight: 600;
+}
+
+@media (max-width:768px) {
+    .about {
+        display: none;
+    }
 }

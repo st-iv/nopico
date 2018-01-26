@@ -5,13 +5,16 @@ body {
 }
 
 h1 {
-	font-size: 2.571em;
+    font-size: 2.571em;
 }
-
+.send_btn {
+    @include send_btn;
+}
 .block__title {
-	@include accent_text;
-	font-size: 2.857rem;
-	padding-top: 30px;
+    @include accent_text;
+    font-size: 2.857rem;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .block-center {
@@ -30,4 +33,9 @@ h1 {
 
 .text-right {
     text-align: right;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
 }

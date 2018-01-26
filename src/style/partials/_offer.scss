@@ -4,6 +4,13 @@
     min-height: 284px;
 }
 
+@media (max-width: 768px) {
+    .offer {
+        display: none;
+    }
+    
+}
+
 .offer__input {
 	text-align: center;
 	padding: 10px 15px;

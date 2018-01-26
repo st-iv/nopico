@@ -1,31 +1,13 @@
 .callback__desc {
     max-width: 670px;
     text-align: center;
-    margin: 0 auto 15px;
+    margin: 15px auto;
     font-size: 1.286em;
 }
 
-.check__title,
-.callback__check label {
+.check__title {
 	font-size: 1.286em;
 }
 
-.callback__label {
-	display: block;
-}
 
-.callback__input {
-    min-width: 226px;
-    color: #000;
-    background: #e2e2e2;
-    padding: 6px;
-    font-size: 1.286em;
-    border-style: solid;
-    border: 1px solid #000;
-}
 
-.callback__check {
-    display: inline-block;
-    text-align: left;
-    margin-bottom: 25px;
-}

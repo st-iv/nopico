@@ -1,24 +1,51 @@
-<div class="production__callback">
+<div class="contact-form" id="contact-form">
 	<div class="container">
 		<div class="row">
 			
 			<div class="col-sm-12">
-				<h2 class="block__title production__subtitle">
+				<h2 class="block__title contact-form__title">
 				Контактная форма
 				</h2>
 			</div>
-			<div class="col-md-4 text-center">
-				<input class="contact-form__input" type="text" placeholder="Имя">
-			</div>
-			<div class="col-md-4 text-center">
-				<input class="contact-form__input" type="text" placeholder="Email">
-			</div>
-			<div class="col-md-4 text-center">
-				<input class="contact-form__input" type="text" placeholder="Тел.">
-			</div>
-			<div class="col-sm-12 text-center">
-				<input class="send_btn" type="submit" value="отправить сообщение">
-			</div>
+			<form id="contactForm" name="sentMessage" novalidate>
+				<div class="row">
+					<div class="col-md-6 text-center">
+						<input class="contact-form__input" type="text" placeholder="Имя *" required>
+						
+						
+						<input class="contact-form__input" type="email" placeholder="Email *" required>
+						
+						
+						<input class="contact-form__input" type="text" placeholder="Телефон *" required>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<textarea class="contact-form__msg" id="message" placeholder="Ваше сообщение ..." required data-validation-required-message="Please enter a message."></textarea>
+					</div>
+					<div class="col-md-12 text-center">
+						<p class="check__title">
+							Как с вами удобнее связаться?
+						</p>
+						
+						
+						<div class="check">
+							
+							<label class="check__item">
+								<input class="check__checkbox" type="checkbox" name="msgEmail" value="msgEmail">
+								Письмо на E-mail
+							</label>
+							
+							<label class="check__item">
+								<input class="check__checkbox" type="checkbox" name="callPhone" value="callPhone">
+								Позвонить по телефону
+							</label>
+						</div>
+					</div>
+					<div class="col-sm-12 text-center">
+						<div id="contact-form__success"></div>
+						<input class="send_btn" type="submit" value="отправить сообщение">
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 </div>

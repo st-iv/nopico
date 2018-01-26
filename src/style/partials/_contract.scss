@@ -1,15 +1,8 @@
 .contract {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
     background: url("../img/contract_bg.png") center no-repeat;
     background-size: contain;
     min-height: 341px;
-}
-
-.contract__input {
-    padding: 6px 0;
-    min-width: 343px;
-    margin-bottom: 25px;
-	@include inner_input;
 }

@@ -22,15 +22,3 @@
     border-radius: 50%;
     border: 4px solid #000;
 }
-
-.production__subtitle {
-    font-size: 2em;
-}
-
-.contact-form__input {
-    @include inner_input;
-    margin-bottom: 20px;
-    min-width: 246px;
-    padding: 10px 0;
-    font-size: 1.714em;
-}

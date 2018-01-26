@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden !important;
+}
+
 body {
     font-family: "Open sans", sans-serif;
     font-size: $base-fz;
@@ -7,12 +11,14 @@ body {
 h1 {
     font-size: 2.571em;
 }
+
 .send_btn {
     @include send_btn;
 }
+
 .block__title {
     @include accent_text;
-    font-size: 2.857rem;
+    font-size: 2.857em;
     padding-top: 30px;
     text-align: center;
 }
@@ -38,4 +44,14 @@ h1 {
 .img-responsive {
     width: 100%;
     height: auto;
+}
+
+.h-margin {
+    margin: 15px auto;
+}
+
+@media (max-width: 768px) {
+    .block__title {
+        font-size: 1.5em;
+    }
 }

@@ -27,3 +27,21 @@
 	@include accent_text;
     font-size: 1.214em;
 }
+
+
+@media (max-width: 768px) {
+	.header__desc {
+		text-align: center;
+	}
+
+	.header__mail,
+	.header__phone {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	
+	.call-back-btn {
+		text-align: center;
+	}
+}

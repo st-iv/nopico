@@ -11,13 +11,16 @@
 }
 
 .about__name {
-    font-size: 1.429em;
+    font-size: 1.643em;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 .about__price {
+    font-family: "Open sans", sans-serif;
+    font-size: 1.286em;
     font-weight: 600;
+    color: #323232;
 }
 
 @media (max-width:768px) {

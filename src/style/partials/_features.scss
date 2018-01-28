@@ -1,0 +1,27 @@
+.features {
+    background: url(../img/post-1088027-1273661381.png) center no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 271px;
+}
+
+.features__subtitle {
+    font-family: "sportsworld";
+    font-size: 1.571em;
+    text-transform: uppercase;
+}
+
+.features__desc {
+    background: white;
+    padding: 15px;
+    font-size: 1.286em;
+    line-height: 25px;
+    border: 1px solid $light-gray;
+}
+
+@media (max-width: 768px) {
+    .features {
+        background: none;
+        padding-bottom: 0;
+    }
+}

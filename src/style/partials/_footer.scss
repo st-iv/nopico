@@ -1,8 +1,44 @@
-footer {
-  background: #ccc;
-  width: 100%;
+.footer__contacts {
+    background: url("../img/footerbg.png") center no-repeat;
+    background-size: cover;
+    background-position: 50% 82%;
 }
+
+.footer__phones-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.footer__phones {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.footer__place {
+    color: #fff;
+    display: flex;
+    max-width: 150px;
+    @include link__reset;
+}
+
 .footer__desc {
-  display: flex;
-  justify-content: space-between;
+    margin-left: 15px;
+}
+
+.footer__phone {
+    color: #fff;
+    @include link__reset;
+}
+
+.footer__copyright {
+    background: url("../img/footerbg.png") center no-repeat;
+    background-size: cover;
+    background-position: 50% 97%;
+    padding-top: 15px;
+    margin-top: 5px;
+}
+
+.footer__copyright-desc {
+    text-align: center;
 }

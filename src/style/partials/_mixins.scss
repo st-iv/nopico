@@ -60,3 +60,12 @@
         background: #fff;
     }
 }
+
+@mixin link__reset {
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+}

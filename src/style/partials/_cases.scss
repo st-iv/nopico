@@ -1,0 +1,47 @@
+.cases__slider {
+    max-width: 900px;
+    margin: auto;
+    outline: none;
+}
+
+.cases__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cases__title {
+    font-weight: 600;
+    font-size: 1.429em;
+}
+
+.cases__desc {
+    font-size: 1.429em;
+}
+
+.cases__thumbnails {
+    display: flex;
+    justify-content: center;
+}
+
+.cases__trigger {
+    margin-right: 10px;
+}
+
+.slick-prev:before {
+    font-size: 76px;
+    color: none;
+    left: -100px;
+    top: -13px;
+    background: url("../img/back.png") no-repeat;
+    position: absolute;
+}
+
+.slick-next:before {
+    font-size: 76px;
+    color: none;
+    right: -100px;
+    top: -13px;
+    background: url("../img/next.png") no-repeat;
+    position: absolute;
+}

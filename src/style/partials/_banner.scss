@@ -1,15 +1,32 @@
 .banner__calc-btn {
-	@include call_btn;
-	font-size: 1.714em;
-	padding: 5px 60px;
-	border-radius: 2em;
+    @include call_btn;
+    font-size: 1.714em;
+    padding: 5px 60px;
+    border-radius: 2em;
 }
 
 .banner__desc {
-	font-size: 1.286em;
-	max-width: 426px;
+    font-size: 1.286em;
+    max-width: 426px;
 }
 
 .banner__slideshow {
-	max-width: 423px;
+    max-width: 423px;
+}
+
+@media (max-width: 768px) {
+    .banner__info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner__slideshow {
+    	margin: auto;
+    }
+
+    .icon-down {
+        display: none;
+    }
 }

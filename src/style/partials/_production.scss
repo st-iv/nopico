@@ -36,3 +36,9 @@
     font-size: 2em;
     font-weight: 600;
 }
+
+@media (max-width: $tablet) {
+    .production__btn {
+        padding: 10px;
+    }
+}

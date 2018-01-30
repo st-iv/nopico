@@ -7,3 +7,13 @@
     min-height: 341px;
     margin-bottom: 100px;
 }
+
+@media (max-width: $tablet) {
+	.contract {
+		min-height: 0;
+	}
+	
+	.contract__btn {
+		padding: 10px;
+	}
+}

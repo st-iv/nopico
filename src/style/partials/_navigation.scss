@@ -37,10 +37,15 @@
 @media (max-width: 1000px) {
     .menu-trigger {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
         background: darken($mango, 10%);
+        span {
+            color: #fff;
+            font-weight: 600;
+            padding: 0 22px;
+        }
     }
 
     .nav__list {
@@ -62,6 +67,8 @@
     }
 
     .nav__link {
+        color: #fff;
+        font-weight: 600;
         padding: 15px 0;
         width: 100%;
         border-bottom: 1px solid darken($mango, 10%);

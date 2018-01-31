@@ -21,10 +21,25 @@
 				<a class="header__phone" href="+7 (3952) 92-02-33">
 					+7 (3952) 92-02-33
 				</a>
-				<a href="#" class="call-back-btn">
+				<a href="#popup" class="call-back-btn popup__link">
 					Заказать обратный звонок
 				</a>
 			</div>
 		</div>
 	</div>
+</div>
+<div id="popup" class="mfp-hide popup__contact">
+	<form id="contactForm" name="sentMessage" novalidate>
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<input class="contact-form__input" type="text" placeholder="Имя *" required>
+				<input id="phone" class="contact-form__input" type="text" placeholder="Телефон *" required>
+			</div>
+
+			<div class="col-sm-12 text-center">
+				<div id="contact-form__success"></div>
+				<input class="send_btn" type="submit" value="позвонить мне">
+			</div>
+		</div>
+	</form>
 </div>

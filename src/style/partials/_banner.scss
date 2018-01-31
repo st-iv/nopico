@@ -14,6 +14,13 @@
     max-width: 423px;
 }
 
+.icon-down:hover {
+    background-image: url(../icons/sprite.png);
+    background-position: 0px 0px;
+    width: 54px;
+    height: 64px;
+}
+
 @media (max-width: 768px) {
     .banner__info {
         display: flex;
@@ -23,7 +30,7 @@
     }
 
     .banner__slideshow {
-    	margin: auto;
+        margin: auto;
     }
 
     .icon-down {

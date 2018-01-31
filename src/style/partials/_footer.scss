@@ -4,6 +4,14 @@
     background-position: 50% 82%;
 }
 
+.footer__wrap {
+    min-height: 500px;
+}
+
+.footer__title {
+    color: #fff;
+}
+
 .footer__phones-wrap {
     display: flex;
     align-items: center;
@@ -43,20 +51,27 @@
     text-align: center;
 }
 
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: $tablet) {
     footer {
-    background: $mango;
+        background: $mango;
+    }
+    .footer__title {
+        color: #000;
+    }
+    .footer__wrap {
+        min-height: 0;
     }
 
     .footer__copyright,
     .footer__contacts {
         background: none;
-    }
-
-    .footer__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .footer__desc,

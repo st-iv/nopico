@@ -10,7 +10,7 @@
         Бесплатная доставка в любую точку России.
         Разработаем дизайн-макета с нуля или доработаем имеющийся.
       </p>
-      <a class="banner__calc-btn" href="#">РАССЧИТАТЬ ЗАКАЗ</a>
+      <a class="banner__calc-btn popup__link" href="#popup__calc">РАССЧИТАТЬ ЗАКАЗ</a>
     </div>
     <div class="col">
       <div class="banner__slideshow">
@@ -26,7 +26,25 @@
       </div>
     </div>
     <div class="col-sm-12 block-center">
-      <div class="icon-down block__center"></div>
+      <a href="#about" class="icon-down block__center"></a>
     </div>
   </div>
+</div>
+<div id="popup__calc" class="mfp-hide popup__contact">
+  <form id="contactForm" name="sentMessage" novalidate>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <input class="contact-form__input" type="text" placeholder="Имя *" required>
+        <input class="contact-form__input" type="email" placeholder="Email *" required>
+        <input id="phone" class="contact-form__input" type="text" placeholder="Телефон *" required>
+      </div>
+      <div class="col-sm-12 col-sm-12">
+        <textarea class="contact-form__msg" id="message" placeholder="Детали заказа ..." required data-validation-required-message="Please enter a message."></textarea>
+      </div>
+      <div class="col-sm-12 text-center">
+        <div id="contact-form__success"></div>
+        <input class="send_btn" type="submit" value="рассчитать">
+      </div>
+    </div>
+  </form>
 </div>

@@ -19,6 +19,12 @@
     padding-top: 5px;
 }
 
+.production__list {
+    font-size: 1.643em;
+    max-width: 323px;
+    padding-top: 5px;
+}
+
 .production__number {
     font-family: "sportsworld";
     padding-top: 4px;
@@ -38,7 +44,23 @@
 }
 
 @media (max-width: $tablet) {
-    .production__btn {
-        padding: 10px;
+    .production__item {
+        border-bottom: 1px dashed $light-gray;
+    }
+
+    .production__item:nth-child(2n) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .production__number {
+        display: none;
+    }
+
+    .production__desc {
+        border-top: 0;
+        padding: 20px 0;
+        margin: auto;
+        text-align: left;
     }
 }

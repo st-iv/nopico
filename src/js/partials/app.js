@@ -61,3 +61,24 @@ $(document).ready(function() {
         $(".nav__list").toggle();
     });
 });
+
+//= modals.js
+
+// links new tab
+
+$(document).ready(function() {
+    var myUrl = location.protocol + '//' + location.hostname;
+    $('a[href^="http://"], a[href^="https://"]').not('[href^="' + myUrl + '"]').attr('target', '_blank');
+});
+
+// Плавный скролл по якорям
+function slowScroll(id) {
+  var offset = 0;
+  $("html, body").animate(
+    {
+      scrollTop: $(id).offset().top - offset
+    },
+    500
+  );
+  return false;
+}

@@ -1,8 +1,52 @@
 <div class="calc">
-<h2 class="block__title">
+	<h2 class="block__title">
 	КАЛЬКУЛЯТОР СТОИМОСТИ
-</h2>
-<p class="text-center">
-	здесь будет калькулятор
-</p>
+	</h2>
+	<div class="container">
+		<form id="calc">
+			<div class="row">
+				<div class="col-lg-6 calc__item">
+					<label class="calc__subtitle">Что изготавливаем?</label>
+					<select name="action">
+						<option>Значки</option>
+						<option>Спортивные медали</option>
+					</select>
+					<label>Особенности</label>
+					<p>Могут повлиять на конечную цену</p>
+					<label class="calc__label">
+						<input type="checkbox" class="calc__check" value="11"> Более 3х цветов эмали
+					</label>
+					<label class="calc__label">
+						<input type="checkbox" class="calc__check" value="11"> 3D элементы
+					</label>
+					<label class="calc__label">
+						<input type="checkbox" class="calc__check" value="21"> Двухсоставное изделие
+					</label>
+					<label class="calc__label">
+						<input type="checkbox" class="calc__check" value="11"> Трехсоставное изделие
+					</label>
+				</div>
+				
+				<div class="col-lg-6">
+					<label class="calc__text">Количество
+						<input class="calc__input" type="text" name="num" placeholder="Введите количество" />
+					</label>
+					
+					<label class="calc__input">Размер
+						<input class="calc__text" type="text" name="size" placeholder="Введите размер" />
+					</label>
+					
+					
+					<input type="button" name="send" value="Расcчитать" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<label>Итого:</label><input type="text" name="result" placeholder="Ответ" />
+					
+					<div id="pay_price"></div>
+				</div>
+			</div>
+		</form>
+	</div>
 </div>

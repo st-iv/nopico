@@ -2,3 +2,20 @@
 	background: #ccc;
 	padding: 15px;
 }
+
+.calc__item {
+	display: flex;
+	flex-direction: column;
+}
+
+.calc__label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 10px;
+}
+
+.calc__input {
+	display: flex;
+	flex-direction: column;
+}

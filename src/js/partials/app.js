@@ -82,3 +82,5 @@ function slowScroll(id) {
   );
   return false;
 }
+
+//= calc.js
